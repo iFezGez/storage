@@ -2,7 +2,7 @@ site_name: "Vesta Lab – Storage"
 repo_url:  "https://github.com/iFezGez/storage"
 
 docs_dir: .
-site_dir: site
+site_dir: ../storage_site  
 
 theme:
   name: material
