@@ -2,19 +2,18 @@ site_name: "Vesta Lab – Storage"
 repo_url:  "https://github.com/iFezGez/storage"
 
 docs_dir: .
-
-site_dir: ../storage_site
+site_dir: site
 
 theme:
-  name: material          
-
+  name: material
 markdown_extensions: [admonition, codehilite, toc]
+
 
 nav:
   - Overview: README.md
 
   - TrueNAS SCALE 24.04 (bare-metal):
-      - Installation: truenas/scale/bare-metal/docs/install.md
+      - Installation: truenas/scale/bare-metal/docs/installation.md
       - VLAN Networking: truenas/scale/bare-metal/docs/vlan_networking.md
       - Pool Configuration: truenas/scale/bare-metal/docs/pool_config.md
       - Datasets: truenas/scale/bare-metal/docs/datasets.md
