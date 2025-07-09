@@ -1,16 +1,19 @@
-# TrueNAS SCALE – Bare-Metal Deployment
+# TrueNAS SCALE 24.04 – Bare-Metal Docs Index
 
-This documentation covers the installation, configuration, and dataset structure of a TrueNAS SCALE system deployed on bare-metal. It includes guidelines for network VLANs, ZFS pool setup, SMB/NFS sharing, snapshot policies, and cloud backup tasks.
+| Topic                         | Doc file |
+|-------------------------------|----------|
+| Installation                  | [installation.md](installation.md) |
+| VLAN Networking               | [vlan_networking.md](vlan_networking.md) |
+| Pool Configuration            | [pool_config.md](pool_config.md) |
+| Dataset Structure             | [datasets.md](datasets.md) |
+| SMB / NFS Shares              | [smb_shares.md](smb_shares.md) |
+| Windows File Access           | [windows_file_access.md](windows_file_access.md) |
+| NFS Export (PBS)              | [nfs_exports.md](nfs_exports.md) |
+| Periodic Snapshots            | [snapshots.md](snapshots.md) |
+| Snapshot Restoration          | [snapshot_restoration.md](snapshot_restoration.md) |
+| Scheduled Backups             | [scheduled_backups.md](scheduled_backups.md) |
+| Cloud-Sync Tasks              | [cloud_sync.md](cloud_sync.md) |
+| Permissions & ACL             | [permissions.md](permissions.md) |
 
-## Bare-Metal Setup
+> Use this page as a quick hub while browsing locally or on GitHub.
 
-- [Installation Guide](install.md)
-- [ZFS Pool Configuration](pool_config.md)
-- [Dataset Structure](datasets.md)
-- [VLAN Networking](vlan_networking.md)
-- [SMB & NFS Shares](smb_nfs_shares.md)
-- [Snapshots](snapshots.md)
-- [Cloud Sync](cloud_sync.md)
-- [Backup Tasks](automated_backups.md)
-- [Windows Upload & Access](windows_access.md)
-- [Snapshot Restore](snapshot_restore.md)
