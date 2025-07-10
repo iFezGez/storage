@@ -6,12 +6,10 @@ Each service lives inside **`<service>/<version>/<deploy_type>/`** so multiple v
 | Service           | Version  | Deploy type   | Docs entry                                              |
 |-------------------|----------|---------------|---------------------------------------------------------|
 | **TrueNAS SCALE** | 23.10.1  | bare-metal    | [`truenas/scale/23.10.1/bare-metal/docs/`](truenas/scale/23.10.1/bare-metal/docs/) |
-| **TrueNAS CORE**  | 13.0-U8  | bare-metal    | [`truenas/core/13.0-U8/bare-metal/docs/`](truenas/core/13.0-U8/bare-metal/docs/) |
-| **Proxmox PBS**   | 5.5      | VM            | [`proxmox/pbs/5.5/vm/docs/`](proxmox/pbs/5.5/vm/docs/)   |
 | **Nextcloud**     | 27       | Containerized | [`nextcloud/27/compose/docs/`](nextcloud/27/compose/docs/) |
 
 ## Structure
-
+```
 storage/
 ├── truenas/scale/bare-metal/
 │   ├─ assets/
@@ -21,7 +19,7 @@ storage/
 ├─ LICENSE
 ├─README.md
 └─ mkdocs.yml
-
+```
 
 ## Documentation
 
