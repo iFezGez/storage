@@ -45,4 +45,6 @@ Built as a production-ready storage lab to demonstrate expertise in:
 - NFS & SMB file sharing  
 - Ceph & iSCSI (future modules)  
 
-This repository is public and reusable as a technical reference for clients and collaborators.  
+---
+
+This repository is public and reusable as a technical reference for clients and collaborators.
