@@ -6,7 +6,7 @@ Each service lives inside **`<service>/<version>/<deploy_type>/`** so multiple v
 | Service           | Version  | Deploy type   | Docs entry                                              |
 |-------------------|----------|---------------|---------------------------------------------------------|
 | **TrueNAS SCALE** | 23.10.1  | bare-metal    | [`truenas/scale/bare-metal/docs/`](truenas/scale/bare-metal/docs/) |
-| **Nextcloud**     | 27       | Containerized |  |
+| **Nextcloud**     | 27       | Containerized | _placeholder_ |
 
 ## Structure
 ```
