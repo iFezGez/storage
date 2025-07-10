@@ -1,4 +1,4 @@
-# Storage Lab Documentation
+# TrueNAS Scale 25.04.1 Documentation
 
 This folder hosts the step-by-step guides for deploying and operating the Vesta Lab storage stack.  
 Each page follows the Vesta Lab documentation template (Quick-view topology, Prerequisites, Steps, Validation, Troubleshooting).
