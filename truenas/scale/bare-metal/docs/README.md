@@ -24,4 +24,3 @@ Each page follows the Vesta Lab documentation template (Quick-view topology, Pre
 - **Cloud sync tasks** ➜ [`cloud_sync.md`](cloud_sync.md)
 - **NFS exports** ➜ [`nfs_exports.md`](nfs_exports.md)
 - **SMB shares** ➜ [`smb_shares.md`](smb_shares.md)
-- 
