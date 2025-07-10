@@ -1,17 +1,48 @@
-# storage/
+# Storage Repo
 
-This repository documents self-hosted storage environments used in the Vesta Lab, designed for both internal lab usage and real-world client scenarios.
+This repository contains reference implementations of storage platforms and file‐sharing services for Vesta Lab.  
+Each service lives inside **`<service>/<version>/<deploy_type>/`** so multiple versions and deployment types can coexist.
+
+| Service           | Version  | Deploy type   | Docs entry                                              |
+|-------------------|----------|---------------|---------------------------------------------------------|
+| **TrueNAS SCALE** | 23.10.1  | bare-metal    | [`truenas/scale/23.10.1/bare-metal/docs/`](truenas/scale/23.10.1/bare-metal/docs/) |
+| **TrueNAS CORE**  | 13.0-U8  | bare-metal    | _placeholder_ |
+| **Nextcloud**     | 27       | Containerized | _placeholder_ |
 
 ## Structure
+```
+virtualization/
+├── truenas/scale/bare-metal/
+│   ├─ assets/
+│   ├─ docs/
+├── nextcloud/
+├─ mkdocs.yml
+├─README
+└─ LICENSE
+```
 
-- `truenas/` – Documentation for TrueNAS SCALE installations and storage pool configuration.
-  - `scale/bare-metal/` – Bare-metal deployments with VLAN support, snapshots, NFS, SMB, and cloud sync.
-- `nextcloud/` – (Planned) Future self-hosted file cloud solutions.
+---
 
-## Goals
+## Live Documentation
 
-- Provide modular, production-ready documentation for storage environments.
-- Enable traceable and scalable configurations for datasets, access, backup, and recovery.
-- Showcase real-world setups for professional portfolios and client proposals.
+The full storage lab is published online with MkDocs:  
+- [https://ifezgez.github.io/storage/](https://ifezgez.github.io/storage/)
 
-> All configurations are applied and validated in real environments.
+---
+
+## Maintainer
+
+**Ignacio Fernandez**  
+CEO @ Vesta Security LATAM  
+[https://vestasec.com](https://vestasec.com)
+
+---
+
+Built as a production-ready storage lab to demonstrate expertise in:  
+- TrueNAS SCALE & CORE (ZFS, snapshots, replication)  
+- Proxmox Backup Server (PBS)  
+- Nextcloud (Containerized with Docker Compose)  
+- NFS & SMB file sharing  
+- Ceph & iSCSI (future modules)  
+
+This repository is public and reusable as a technical reference for clients and collaborators.  
