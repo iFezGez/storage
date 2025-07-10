@@ -32,7 +32,7 @@ Snapshots are point-in-time copies of datasets. You can:
 2. **⋮** next to snapshot ▸ **Clone to New Dataset**  
 3. Name it e.g. `restore-lab-YYYY-MM-DD` ▸ **Submit**
 
-![Restore dialog](../assets/screenshot/snapshot-restore-dialog.png)
+![Restore dialog](../assets/screenshots/snapshot-restore-dialog.png)
 
 The clone appears as a separate dataset; share it temporarily to extract files.
 

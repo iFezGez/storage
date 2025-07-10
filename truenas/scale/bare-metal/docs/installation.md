@@ -49,6 +49,6 @@ When the summary looks correct, press **OK** to start the installation.
    TrueNAS SCALE 24.04
    Web UI: http://10.30.0.11
 
-![Login summary](../assets/screenshot/dashboard-first-login.png)
+![Login summary](../assets/screenshots/dashboard-first-login.png)
 
 

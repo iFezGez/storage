@@ -63,6 +63,8 @@ To make the share persistent on reboot:
 3. For folder, enter the path (e.g., `\\10.30.0.11\lab`).
 4. Check “Reconnect at sign-in” and click `Finish`.
 
+![Interfaces list with vlan30](../assets/screenshots/windows-mapped-drive.png)
+
 ---
 
 ## Troubleshooting

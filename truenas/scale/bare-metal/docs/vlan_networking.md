@@ -26,7 +26,7 @@
 | **Network ▸ Interfaces ▸ Add** | Select **Parent = enxe04c365168**<br>Type = **VLAN**<br>ID = **30**<br>Name = **vlan30** | Creates tagged interface |
 | **vlan30 ▸ Edit** | Set **IP Address = 10.30.0.11/24** | Mgmt & storage subnet |
 
-![Interfaces list with vlan30](../assets/screenshot/network-interfaces-vlan30.png)
+![Interfaces list with vlan30](../assets/screenshots/network-interfaces-vlan30.png)
 
 ---
 

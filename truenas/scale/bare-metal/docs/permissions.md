@@ -39,7 +39,7 @@ Dataset path: `/mnt/core-pool/lab`
    * `root`     – **Full control** (safety)  
    * Tighten or remove `everyone@` as required  
 
-![ACL editor](../assets/screenshot/acl-editor-dataset.png)
+![ACL editor](../assets/screenshots/acl-editor-dataset.png)
 
 4. **Test from Windows**  
    `\\truenas\lab` → prompt for *labuser* credentials → create / delete a file.

@@ -42,3 +42,4 @@ zpool status core-pool
 zfs get compression core-pool
 ```
 
+![ACL editor](../assets/screenshots/zfs-pool-core-pool.png)

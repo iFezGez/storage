@@ -9,7 +9,7 @@
 
 Snapshots are read-only, space-efficient checkpoints—ideal for ransomware roll-back and replication.
 
-![Snapshot task list](../assets/screenshot/snapshot-tasks-list.png)
+![Snapshot task list](../assets/screenshots/snapshot-tasks-list.png)
 
 ---
 

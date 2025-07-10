@@ -26,7 +26,7 @@
 |-----------|--------|---------|
 | **System › Services › SMB** | Toggle **Start automatically** + click **Start** | Keeps SMB up on every boot |
 
-![SMB service running](../assets/screenshot/smb-service-running.png)
+![SMB service running](../assets/screenshots/smb-service-running.png)
 
 ---
 
@@ -38,7 +38,7 @@
 | | Path =`/mnt/core-pool/lab` · Name =`lab` | Lab share |
 | | Path =`/mnt/core-pool/agency` · Name =`agency` | Business share |
 
-![SMB shares list](../assets/screenshot/smb-shares-list.png)
+![SMB shares list](../assets/screenshots/smb-shares-list.png)
 
 ---
 

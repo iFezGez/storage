@@ -26,7 +26,7 @@
 |  | MapAll **User = root**, **Group = root** |
 |  | Save |
 
-![NFS export](../assets/screenshot/nfs-share-lab-backup.png)
+![NFS export](../assets/screenshots/nfs-share-lab-backup.png)
 
 ---
 

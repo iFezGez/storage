@@ -9,7 +9,7 @@
 
 All jobs use a single Google Drive OAuth credential and the **Copy** transfer mode.
 
-![Cloud-sync task list](../assets/screenshot/cloud-sync-tasks.png)
+![Cloud-sync task list](../assets/screenshots/cloud-sync-tasks.png)
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## Quick-view topology
 
-![Dataset tree](../assets/screenshot/datasets-tree-core-pool.png)
+![Dataset tree](../assets/screenshots/datasets-tree-core-pool.png)
 
 ---
 
