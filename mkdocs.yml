@@ -1,6 +1,7 @@
 site_name: "TrueNAS SCALE 24.04 docs"
-repo_url: "https://github.com/ifezgez/storage"
-docs_dir: docs                      # ya lo tienes, lo dejo explícito
+repo_url:  "https://github.com/ifezgez/storage"
+docs_dir:  docs
+
 theme:
   name: material
 
@@ -25,6 +26,4 @@ nav:
       - NFS Exports:       truenas/scale/24.04/bare-metal/docs/nfs_exports.md
       - Permissions & ACL: truenas/scale/24.04/bare-metal/docs/permissions.md
       - Windows File Access: truenas/scale/24.04/bare-metal/docs/windows_file_access.md
-
-  - Nextcloud 27 (containerized):
-      - Home: nextcloud/27/containerized/README.md   # renombrado para consistencia
+      
