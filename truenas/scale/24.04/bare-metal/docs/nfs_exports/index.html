@@ -9,18 +9,22 @@
       
       
       
+        <link rel="prev" href="../smb_shares/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../permissions/">
+      
+      
+      <link rel="icon" href="../../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>TrueNAS SCALE 24.04 docs</title>
+        <title>NFS Exports - TrueNAS SCALE 24.04 docs</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -39,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#nfs-export-lab-backup-dataset" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -69,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="TrueNAS SCALE 24.04 docs" class="md-header__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
+    <a href="../../../../../.." title="TrueNAS SCALE 24.04 docs" class="md-header__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -89,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              NFS Exports
             
           </span>
         </div>
@@ -179,7 +188,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="TrueNAS SCALE 24.04 docs" class="md-nav__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
+    <a href="../../../../../.." title="TrueNAS SCALE 24.04 docs" class="md-nav__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -209,7 +218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../../../../.." class="md-nav__link">
         
   
   
@@ -228,18 +237,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -255,7 +266,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             TrueNAS SCALE 24.04 (bare-metal)
@@ -269,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   
@@ -292,7 +303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/vlan_networking/" class="md-nav__link">
+      <a href="../vlan_networking/" class="md-nav__link">
         
   
   
@@ -315,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/datasets/" class="md-nav__link">
+      <a href="../datasets/" class="md-nav__link">
         
   
   
@@ -338,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/pool_config/" class="md-nav__link">
+      <a href="../pool_config/" class="md-nav__link">
         
   
   
@@ -361,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/snapshots/" class="md-nav__link">
+      <a href="../snapshots/" class="md-nav__link">
         
   
   
@@ -384,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/snapshot_restoration/" class="md-nav__link">
+      <a href="../snapshot_restoration/" class="md-nav__link">
         
   
   
@@ -407,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/cloud_sync/" class="md-nav__link">
+      <a href="../cloud_sync/" class="md-nav__link">
         
   
   
@@ -430,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/scheduled_backups/" class="md-nav__link">
+      <a href="../scheduled_backups/" class="md-nav__link">
         
   
   
@@ -453,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/smb_shares/" class="md-nav__link">
+      <a href="../smb_shares/" class="md-nav__link">
         
   
   
@@ -473,10 +484,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/nfs_exports/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    NFS Exports
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -487,6 +520,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-view-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick-view table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-the-nfs-share-gui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1 – Create the NFS share (GUI)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-enable-start-the-nfs-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2 – Enable &amp; start the NFS service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-validate-from-a-linux-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3 – Validate from a Linux client
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -499,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/permissions/" class="md-nav__link">
+      <a href="../permissions/" class="md-nav__link">
         
   
   
@@ -522,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/windows_file_access/" class="md-nav__link">
+      <a href="../windows_file_access/" class="md-nav__link">
         
   
   
@@ -590,7 +688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nextcloud/27/containerized/README.md" class="md-nav__link">
+      <a href="../../../../../../nextcloud/27/containerized/README.md" class="md-nav__link">
         
   
   
@@ -630,6 +728,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-view-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick-view table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-the-nfs-share-gui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1 – Create the NFS share (GUI)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-enable-start-the-nfs-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2 – Enable &amp; start the NFS service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-validate-from-a-linux-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3 – Validate from a Linux client
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -641,8 +794,109 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="nfs-export-lab-backup-dataset">NFS Export – lab-backup dataset</h1>
+<h2 id="quick-view-table">Quick-view table</h2>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Export path</th>
+<th>Allowed hosts</th>
+<th>MapAll user/group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>core-pool/lab/backups/pbs</code></td>
+<td><code>/mnt/core-pool/lab/backups/pbs</code></td>
+<td><code>10.30.0.2</code></td>
+<td><code>root</code> / <code>root</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>TrueNAS SCALE 24.04 running  </li>
+<li>Dataset <code>core-pool/lab/backups/pbs</code> already created  </li>
+<li>Client <code>10.30.0.2</code> reachable over the storage VLAN  </li>
+<li>SMB service disabled on this path (to avoid sharing conflicts)</li>
+</ul>
+<hr />
+<h2 id="step-1-create-the-nfs-share-gui">Step 1 – Create the NFS share (GUI)</h2>
+<table>
+<thead>
+<tr>
+<th>Menu path</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sharing ▸ Unix Shares (NFS) ▸ Add</strong></td>
+<td>Path = <code>/mnt/core-pool/lab/backups/pbs</code></td>
+</tr>
+<tr>
+<td></td>
+<td>Allowed hosts = <code>10.30.0.2</code></td>
+</tr>
+<tr>
+<td></td>
+<td>MapAll <strong>User = root</strong>, <strong>Group = root</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>Save</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="NFS export" src="../../assets/screenshots/nfs-share-lab-backup.png" /></p>
+<hr />
+<h2 id="step-2-enable-start-the-nfs-service">Step 2 – Enable &amp; start the NFS service</h2>
+<table>
+<thead>
+<tr>
+<th>Menu</th>
+<th>Toggle</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>System ▸ Services ▸ NFS</strong></td>
+<td><strong>Start automatically</strong> + <strong>Start</strong></td>
+<td>Activates NFS daemon on boot</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="step-3-validate-from-a-linux-client">Step 3 – Validate from a Linux client</h2>
+<div class="codehilite"><pre><span></span><code>showmount<span class="w"> </span>-e<span class="w"> </span><span class="m">10</span>.30.0.11
+</code></pre></div>
+
+<p>sudo mount -t nfs 10.30.0.11:/mnt/core-pool/lab/backups/pbs /mnt/truenas-backup
+touch /mnt/truenas-backup/test.txt   # write-test
+umount /mnt/truenas-backup</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -678,10 +932,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": [], "search": "/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../../../..", "features": [], "search": "../../../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>

@@ -9,18 +9,22 @@
       
       
       
+        <link rel="prev" href="../../../../../..">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../vlan_networking/">
+      
+      
+      <link rel="icon" href="../../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>TrueNAS SCALE 24.04 docs</title>
+        <title>Installation - TrueNAS SCALE 24.04 docs</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -39,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#installation-truenas-scale-2404-bare-metal" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -69,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="TrueNAS SCALE 24.04 docs" class="md-header__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
+    <a href="../../../../../.." title="TrueNAS SCALE 24.04 docs" class="md-header__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -89,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Installation
             
           </span>
         </div>
@@ -179,7 +188,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="TrueNAS SCALE 24.04 docs" class="md-nav__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
+    <a href="../../../../../.." title="TrueNAS SCALE 24.04 docs" class="md-nav__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -209,7 +218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../../../../.." class="md-nav__link">
         
   
   
@@ -228,18 +237,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -255,7 +266,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             TrueNAS SCALE 24.04 (bare-metal)
@@ -266,10 +277,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/installation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -280,6 +313,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-view-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick-view topology
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-the-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1 – Create the installer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-run-the-text-mode-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2 – Run the text-mode installer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-first-boot-web-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3 – First boot &amp; web login
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -292,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/vlan_networking/" class="md-nav__link">
+      <a href="../vlan_networking/" class="md-nav__link">
         
   
   
@@ -315,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/datasets/" class="md-nav__link">
+      <a href="../datasets/" class="md-nav__link">
         
   
   
@@ -338,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/pool_config/" class="md-nav__link">
+      <a href="../pool_config/" class="md-nav__link">
         
   
   
@@ -361,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/snapshots/" class="md-nav__link">
+      <a href="../snapshots/" class="md-nav__link">
         
   
   
@@ -384,7 +482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/snapshot_restoration/" class="md-nav__link">
+      <a href="../snapshot_restoration/" class="md-nav__link">
         
   
   
@@ -407,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/cloud_sync/" class="md-nav__link">
+      <a href="../cloud_sync/" class="md-nav__link">
         
   
   
@@ -430,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/scheduled_backups/" class="md-nav__link">
+      <a href="../scheduled_backups/" class="md-nav__link">
         
   
   
@@ -453,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/smb_shares/" class="md-nav__link">
+      <a href="../smb_shares/" class="md-nav__link">
         
   
   
@@ -476,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/nfs_exports/" class="md-nav__link">
+      <a href="../nfs_exports/" class="md-nav__link">
         
   
   
@@ -499,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/permissions/" class="md-nav__link">
+      <a href="../permissions/" class="md-nav__link">
         
   
   
@@ -522,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/windows_file_access/" class="md-nav__link">
+      <a href="../windows_file_access/" class="md-nav__link">
         
   
   
@@ -590,7 +688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nextcloud/27/containerized/README.md" class="md-nav__link">
+      <a href="../../../../../../nextcloud/27/containerized/README.md" class="md-nav__link">
         
   
   
@@ -630,6 +728,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-view-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick-view topology
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-the-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1 – Create the installer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-run-the-text-mode-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2 – Run the text-mode installer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-first-boot-web-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3 – First boot &amp; web login
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -641,8 +794,84 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="installation-truenas-scale-2404-bare-metal">Installation – TrueNAS SCALE 24.04 (bare-metal)</h1>
+<h2 id="quick-view-topology">Quick-view topology</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>NIC / VLAN</th>
+<th>Role</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>truenas-node01</td>
+<td>10.30.0.11</td>
+<td>Storage head</td>
+<td>128 GB system SSD + 4 TB USB HDD</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Single-node lab build. Add more nodes later for ZFS replication.</p>
+</blockquote>
+<hr />
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Latest <strong>TrueNAS SCALE ISO</strong> [✔ verified <a href="https://www.truenas.com/download-truenas-scale/">https://www.truenas.com/download-truenas-scale/</a>]  </li>
+<li>USB stick ≥ 8 GB flashed with <strong>Balena Etcher</strong> or <strong>Rufus</strong></li>
+<li>Physical host with one free disk (this guide uses <strong>4 TB USB HDD</strong> for data)</li>
+<li>IP/DNS reservation: <code>truenas-node01 10.30.0.11</code></li>
+<li>VGA/ILO or KVM access for initial install</li>
+</ul>
+<hr />
+<h2 id="step-1-create-the-installer">Step 1 – Create the installer</h2>
+<ol>
+<li>Download the ISO.  </li>
+<li>Flash to USB with your preferred tool.  </li>
+<li>Verify the SHA-256 checksum matches the official site.</li>
+</ol>
+<hr />
+<h2 id="step-2-run-the-text-mode-installer">Step 2 – Run the text-mode installer</h2>
+<ol>
+<li>Boot the server from the USB stick.  </li>
+<li>Select <strong>Install/Upgrade</strong> → choose the <strong>system SSD</strong> (<code>sda</code>).  </li>
+<li>Confirm the swap prompt (default size is fine).  </li>
+<li>Set the <strong>root password</strong> when asked.</li>
+</ol>
+<p>When the summary looks correct, press <strong>OK</strong> to start the installation.</p>
+<hr />
+<h2 id="step-3-first-boot-web-login">Step 3 – First boot &amp; web login</h2>
+<ol>
+<li>Remove the USB stick and reboot.  </li>
+<li>On the console you’ll see the assigned IP, e.g.:</li>
+</ol>
+<p>```bash
+   TrueNAS SCALE 24.04
+   Web UI: http://10.30.0.11</p>
+<p><img alt="Login summary" src="../../assets/screenshots/dashboard-first-login.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -678,10 +907,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": [], "search": "/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../../../..", "features": [], "search": "../../../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>

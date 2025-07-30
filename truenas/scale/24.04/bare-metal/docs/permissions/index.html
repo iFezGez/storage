@@ -9,18 +9,22 @@
       
       
       
+        <link rel="prev" href="../nfs_exports/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../windows_file_access/">
+      
+      
+      <link rel="icon" href="../../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>TrueNAS SCALE 24.04 docs</title>
+        <title>Permissions & ACL - TrueNAS SCALE 24.04 docs</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -39,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#permissions-acl-core-pool-datasets" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -69,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="TrueNAS SCALE 24.04 docs" class="md-header__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
+    <a href="../../../../../.." title="TrueNAS SCALE 24.04 docs" class="md-header__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -89,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Permissions & ACL
             
           </span>
         </div>
@@ -179,7 +188,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="TrueNAS SCALE 24.04 docs" class="md-nav__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
+    <a href="../../../../../.." title="TrueNAS SCALE 24.04 docs" class="md-nav__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -209,7 +218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../../../../.." class="md-nav__link">
         
   
   
@@ -228,18 +237,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -255,7 +266,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             TrueNAS SCALE 24.04 (bare-metal)
@@ -269,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   
@@ -292,7 +303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/vlan_networking/" class="md-nav__link">
+      <a href="../vlan_networking/" class="md-nav__link">
         
   
   
@@ -315,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/datasets/" class="md-nav__link">
+      <a href="../datasets/" class="md-nav__link">
         
   
   
@@ -338,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/pool_config/" class="md-nav__link">
+      <a href="../pool_config/" class="md-nav__link">
         
   
   
@@ -361,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/snapshots/" class="md-nav__link">
+      <a href="../snapshots/" class="md-nav__link">
         
   
   
@@ -384,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/snapshot_restoration/" class="md-nav__link">
+      <a href="../snapshot_restoration/" class="md-nav__link">
         
   
   
@@ -407,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/cloud_sync/" class="md-nav__link">
+      <a href="../cloud_sync/" class="md-nav__link">
         
   
   
@@ -430,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/scheduled_backups/" class="md-nav__link">
+      <a href="../scheduled_backups/" class="md-nav__link">
         
   
   
@@ -453,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/smb_shares/" class="md-nav__link">
+      <a href="../smb_shares/" class="md-nav__link">
         
   
   
@@ -476,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/nfs_exports/" class="md-nav__link">
+      <a href="../nfs_exports/" class="md-nav__link">
         
   
   
@@ -496,10 +507,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/permissions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Permissions & ACL
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -510,6 +543,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-view-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick-view matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posix-vs-nfsv4-acl-when-to-pick-which" class="md-nav__link">
+    <span class="md-ellipsis">
+      POSIX vs NFSv4 ACL – when to pick which
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-lab-dataset-smb-nfsv4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure lab/ dataset (SMB + NFSv4)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-labbackupspbs-dataset-nfs-posix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure lab/backups/pbs/ dataset (NFS + POSIX)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-gotchas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips &amp; gotchas
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -522,7 +629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/windows_file_access/" class="md-nav__link">
+      <a href="../windows_file_access/" class="md-nav__link">
         
   
   
@@ -590,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nextcloud/27/containerized/README.md" class="md-nav__link">
+      <a href="../../../../../../nextcloud/27/containerized/README.md" class="md-nav__link">
         
   
   
@@ -630,6 +737,70 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-view-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick-view matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posix-vs-nfsv4-acl-when-to-pick-which" class="md-nav__link">
+    <span class="md-ellipsis">
+      POSIX vs NFSv4 ACL – when to pick which
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-lab-dataset-smb-nfsv4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure lab/ dataset (SMB + NFSv4)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-labbackupspbs-dataset-nfs-posix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure lab/backups/pbs/ dataset (NFS + POSIX)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-gotchas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips &amp; gotchas
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -641,8 +812,132 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="permissions-acl-core-pool-datasets">Permissions &amp; ACL – core-pool datasets</h1>
+<h2 id="quick-view-matrix">Quick-view matrix</h2>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Protocol</th>
+<th>ACL type</th>
+<th>Owner</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lab/</code></td>
+<td>SMB</td>
+<td><strong>NFSv4</strong></td>
+<td><code>labuser</code></td>
+<td>Windows / macOS lab share</td>
+</tr>
+<tr>
+<td><code>agency/</code></td>
+<td>SMB</td>
+<td><strong>NFSv4</strong></td>
+<td><code>agencyuser</code></td>
+<td>Business share</td>
+</tr>
+<tr>
+<td><code>lab/backups/pbs/</code></td>
+<td>NFS</td>
+<td><strong>POSIX</strong></td>
+<td><code>root</code></td>
+<td>Backup target for Proxmox Backup Server</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="posix-vs-nfsv4-acl-when-to-pick-which">POSIX vs NFSv4 ACL – when to pick which</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>POSIX ACL</th>
+<th>NFSv4 ACL (Windows-style)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Best for</td>
+<td>Linux / NFS</td>
+<td>Windows / SMB (also macOS)</td>
+</tr>
+<tr>
+<td>GUI management</td>
+<td>Limited</td>
+<td>Full in TrueNAS SCALE</td>
+</tr>
+<tr>
+<td>Granularity</td>
+<td>Basic (u/g/o)</td>
+<td>Fine-grained (read / write / list, inheritance)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Rule of thumb</strong><br />
+• <strong>SMB share ➜ NFSv4 ACL</strong>   <br />
+• <strong>Pure NFS export ➜ POSIX ACL</strong></p>
+</blockquote>
+<hr />
+<h2 id="configure-lab-dataset-smb-nfsv4">Configure <code>lab/</code> dataset (SMB + NFSv4)</h2>
+<p>Dataset path: <code>/mnt/core-pool/lab</code></p>
+<ol>
+<li><strong>Datasets ▸ lab ▸ Edit</strong>  </li>
+<li>ACL Type → <strong>NFSv4</strong>  </li>
+<li>Apply recursively ✔  </li>
+<li><strong>Set ownership</strong>  </li>
+<li>Owner <strong>User = labuser</strong>  </li>
+<li>Owner <strong>Group = labuser</strong> (optional)  </li>
+<li><strong>ACL entries</strong>  </li>
+<li><code>labuser</code> – <strong>Full control</strong>  </li>
+<li><code>root</code>     – <strong>Full control</strong> (safety)  </li>
+<li>Tighten or remove <code>everyone@</code> as required  </li>
+</ol>
+<p><img alt="ACL editor" src="../../assets/screenshots/acl-editor-dataset.png" /></p>
+<ol>
+<li><strong>Test from Windows</strong><br />
+<code>\\truenas\lab</code> → prompt for <em>labuser</em> credentials → create / delete a file.</li>
+</ol>
+<hr />
+<h2 id="configure-labbackupspbs-dataset-nfs-posix">Configure <code>lab/backups/pbs/</code> dataset (NFS + POSIX)</h2>
+<p>Dataset path: <code>/mnt/core-pool/lab/backups/pbs</code></p>
+<div class="codehilite"><pre><span></span><code>chown<span class="w"> </span>root:root<span class="w"> </span>/mnt/core-pool/lab/backups/pbs
+chmod<span class="w"> </span><span class="m">770</span><span class="w">      </span>/mnt/core-pool/lab/backups/pbs
+</code></pre></div>
+
+<h2 id="validation">Validation</h2>
+<div class="codehilite"><pre><span></span><code>nfs4xdr<span class="w"> </span>−p<span class="w"> </span>/mnt/core-pool/lab
+</code></pre></div>
+
+<h2 id="tips-gotchas">Tips &amp; gotchas</h2>
+<ul>
+<li>Use GUI editor for NFSv4 ACLs – mixing chmod with NFSv4 trees can break inheritance.</li>
+<li>Restart the SMB service after large ACL changes for Windows clients to re-scan permissions.</li>
+<li>Snapshot tasks inherit ACLs automatically.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -678,10 +973,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": [], "search": "/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../../../..", "features": [], "search": "../../../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>

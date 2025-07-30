@@ -9,18 +9,22 @@
       
       
       
+        <link rel="prev" href="../datasets/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../snapshots/">
+      
+      
+      <link rel="icon" href="../../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>TrueNAS SCALE 24.04 docs</title>
+        <title>Pool Configuration - TrueNAS SCALE 24.04 docs</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -39,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#zfs-pool-configuration-core-pool" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -69,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="TrueNAS SCALE 24.04 docs" class="md-header__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
+    <a href="../../../../../.." title="TrueNAS SCALE 24.04 docs" class="md-header__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -89,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Pool Configuration
             
           </span>
         </div>
@@ -179,7 +188,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="TrueNAS SCALE 24.04 docs" class="md-nav__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
+    <a href="../../../../../.." title="TrueNAS SCALE 24.04 docs" class="md-nav__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -209,7 +218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../../../../.." class="md-nav__link">
         
   
   
@@ -228,18 +237,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -255,7 +266,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             TrueNAS SCALE 24.04 (bare-metal)
@@ -269,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   
@@ -292,7 +303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/vlan_networking/" class="md-nav__link">
+      <a href="../vlan_networking/" class="md-nav__link">
         
   
   
@@ -315,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/datasets/" class="md-nav__link">
+      <a href="../datasets/" class="md-nav__link">
         
   
   
@@ -335,10 +346,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/pool_config/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Pool Configuration
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -349,6 +382,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-view-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick-view matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-the-pool-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1 – Create the pool (CLI)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-enable-compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2 – Enable compression
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -361,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/snapshots/" class="md-nav__link">
+      <a href="../snapshots/" class="md-nav__link">
         
   
   
@@ -384,7 +482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/snapshot_restoration/" class="md-nav__link">
+      <a href="../snapshot_restoration/" class="md-nav__link">
         
   
   
@@ -407,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/cloud_sync/" class="md-nav__link">
+      <a href="../cloud_sync/" class="md-nav__link">
         
   
   
@@ -430,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/scheduled_backups/" class="md-nav__link">
+      <a href="../scheduled_backups/" class="md-nav__link">
         
   
   
@@ -453,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/smb_shares/" class="md-nav__link">
+      <a href="../smb_shares/" class="md-nav__link">
         
   
   
@@ -476,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/nfs_exports/" class="md-nav__link">
+      <a href="../nfs_exports/" class="md-nav__link">
         
   
   
@@ -499,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/permissions/" class="md-nav__link">
+      <a href="../permissions/" class="md-nav__link">
         
   
   
@@ -522,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/windows_file_access/" class="md-nav__link">
+      <a href="../windows_file_access/" class="md-nav__link">
         
   
   
@@ -590,7 +688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nextcloud/27/containerized/README.md" class="md-nav__link">
+      <a href="../../../../../../nextcloud/27/containerized/README.md" class="md-nav__link">
         
   
   
@@ -630,6 +728,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-view-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick-view matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-the-pool-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1 – Create the pool (CLI)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-enable-compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2 – Enable compression
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -641,8 +794,83 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="zfs-pool-configuration-core-pool">ZFS Pool Configuration – <em>core-pool</em></h1>
+<h2 id="quick-view-matrix">Quick-view matrix</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pool name</td>
+<td><code>core-pool</code></td>
+<td>Single-disk lab pool</td>
+</tr>
+<tr>
+<td>Vdev layout</td>
+<td>1 × stripe</td>
+<td>4 TB USB HDD</td>
+</tr>
+<tr>
+<td>Sector size</td>
+<td><code>ashift=12</code></td>
+<td>4 KB alignment, good for SSD/HDD</td>
+</tr>
+<tr>
+<td>Compression</td>
+<td><code>lz4</code></td>
+<td>Default for SCALE</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>TrueNAS SCALE Web UI available  </li>
+<li>A spare disk visible as <code>/dev/sdb</code> (<code>4 TB USB HDD</code>)  </li>
+<li>No important data on that disk – operation is destructive</li>
+</ul>
+<hr />
+<h2 id="step-1-create-the-pool-cli">Step 1 – Create the pool (CLI)</h2>
+<div class="codehilite"><pre><span></span><code>zpool<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>-o<span class="w"> </span><span class="nv">ashift</span><span class="o">=</span><span class="m">12</span><span class="w"> </span>core-pool<span class="w"> </span>/dev/sdb
+</code></pre></div>
+
+<hr />
+<h2 id="step-2-enable-compression">Step 2 – Enable compression</h2>
+<div class="codehilite"><pre><span></span><code>zfs<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="nv">compression</span><span class="o">=</span>lz4<span class="w"> </span>core-pool
+</code></pre></div>
+
+<hr />
+<h2 id="validation">Validation</h2>
+<div class="codehilite"><pre><span></span><code>zpool<span class="w"> </span>status<span class="w"> </span>core-pool
+zfs<span class="w"> </span>get<span class="w"> </span>compression<span class="w"> </span>core-pool
+</code></pre></div>
+
+<p><img alt="ACL editor" src="../../assets/screenshots/zfs-pool-core-pool.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -678,10 +906,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": [], "search": "/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../../../..", "features": [], "search": "../../../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>

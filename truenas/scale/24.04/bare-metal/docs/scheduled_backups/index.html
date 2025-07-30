@@ -9,18 +9,22 @@
       
       
       
+        <link rel="prev" href="../cloud_sync/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../smb_shares/">
+      
+      
+      <link rel="icon" href="../../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>TrueNAS SCALE 24.04 docs</title>
+        <title>Scheduled Backups - TrueNAS SCALE 24.04 docs</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -39,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#scheduled-backup-tasks-in-truenas-scale" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -69,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="TrueNAS SCALE 24.04 docs" class="md-header__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
+    <a href="../../../../../.." title="TrueNAS SCALE 24.04 docs" class="md-header__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -89,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Scheduled Backups
             
           </span>
         </div>
@@ -179,7 +188,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="TrueNAS SCALE 24.04 docs" class="md-nav__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
+    <a href="../../../../../.." title="TrueNAS SCALE 24.04 docs" class="md-nav__button md-logo" aria-label="TrueNAS SCALE 24.04 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -209,7 +218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../../../../.." class="md-nav__link">
         
   
   
@@ -228,18 +237,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -255,7 +266,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             TrueNAS SCALE 24.04 (bare-metal)
@@ -269,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   
@@ -292,7 +303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/vlan_networking/" class="md-nav__link">
+      <a href="../vlan_networking/" class="md-nav__link">
         
   
   
@@ -315,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/datasets/" class="md-nav__link">
+      <a href="../datasets/" class="md-nav__link">
         
   
   
@@ -338,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/pool_config/" class="md-nav__link">
+      <a href="../pool_config/" class="md-nav__link">
         
   
   
@@ -361,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/snapshots/" class="md-nav__link">
+      <a href="../snapshots/" class="md-nav__link">
         
   
   
@@ -384,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/snapshot_restoration/" class="md-nav__link">
+      <a href="../snapshot_restoration/" class="md-nav__link">
         
   
   
@@ -407,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/cloud_sync/" class="md-nav__link">
+      <a href="../cloud_sync/" class="md-nav__link">
         
   
   
@@ -427,10 +438,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/scheduled_backups/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Scheduled Backups
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -441,6 +474,143 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-automatic-snapshot-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Automatic Snapshot Tasks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Automatic Snapshot Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps-to-configure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps to Configure:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-cloud-sync-tasks-backups-to-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Cloud Sync Tasks (Backups to Cloud)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Cloud Sync Tasks (Backups to Cloud)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#existing-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Existing Setup:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps-to-configure_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps to Configure:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended Schedule:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-local-replication-tasks-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Local Replication Tasks (Optional)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Local Replication Tasks (Optional)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maintenance-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maintenance Recommendations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Files
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -453,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/smb_shares/" class="md-nav__link">
+      <a href="../smb_shares/" class="md-nav__link">
         
   
   
@@ -476,7 +646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/nfs_exports/" class="md-nav__link">
+      <a href="../nfs_exports/" class="md-nav__link">
         
   
   
@@ -499,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/permissions/" class="md-nav__link">
+      <a href="../permissions/" class="md-nav__link">
         
   
   
@@ -522,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/truenas/scale/24.04/bare-metal/docs/windows_file_access/" class="md-nav__link">
+      <a href="../windows_file_access/" class="md-nav__link">
         
   
   
@@ -590,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nextcloud/27/containerized/README.md" class="md-nav__link">
+      <a href="../../../../../../nextcloud/27/containerized/README.md" class="md-nav__link">
         
   
   
@@ -630,6 +800,133 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-automatic-snapshot-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Automatic Snapshot Tasks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Automatic Snapshot Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps-to-configure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps to Configure:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-cloud-sync-tasks-backups-to-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Cloud Sync Tasks (Backups to Cloud)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Cloud Sync Tasks (Backups to Cloud)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#existing-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Existing Setup:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps-to-configure_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps to Configure:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended Schedule:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-local-replication-tasks-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Local Replication Tasks (Optional)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Local Replication Tasks (Optional)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maintenance-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maintenance Recommendations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Files
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -641,8 +938,137 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="scheduled-backup-tasks-in-truenas-scale">Scheduled Backup Tasks in TrueNAS SCALE</h1>
+<p>This document describes how to automate backups in TrueNAS SCALE using scheduled tasks. These include local snapshot creation, remote cloud sync (e.g., Google Drive), and dataset replication (if applicable).</p>
+<hr />
+<h2 id="1-automatic-snapshot-tasks">1. Automatic Snapshot Tasks</h2>
+<p>Snapshots are lightweight backups of datasets that can be scheduled periodically.</p>
+<h3 id="steps-to-configure">Steps to Configure:</h3>
+<ol>
+<li>Go to <strong>Data Protection</strong> → <strong>Periodic Snapshot Tasks</strong>.</li>
+<li>Click <strong>Add</strong>.</li>
+<li>Select the dataset to snapshot (e.g., <code>core-pool/lab</code>, <code>core-pool/agency</code>).</li>
+<li>Configure:</li>
+<li><strong>Recursive</strong>: <code>Yes</code> (to include all child datasets).</li>
+<li><strong>Lifetime</strong>: e.g., <code>2 weeks</code> or <code>1 month</code>.</li>
+<li><strong>Schedule</strong>: Define a cron-style schedule or use presets (e.g., daily at 02:00).</li>
+<li>Click <strong>Save</strong> and <strong>Enable</strong> the task.</li>
+</ol>
+<h3 id="example">Example:</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dataset</td>
+<td>core-pool/lab</td>
+</tr>
+<tr>
+<td>Recursive</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Lifetime</td>
+<td>1 month</td>
+</tr>
+<tr>
+<td>Schedule</td>
+<td>Daily at 02:00 AM</td>
+</tr>
+</tbody>
+</table>
+<p>Snapshots can later be used for manual rollback or replication.</p>
+<hr />
+<h2 id="2-cloud-sync-tasks-backups-to-cloud">2. Cloud Sync Tasks (Backups to Cloud)</h2>
+<p>A Cloud Sync Task uploads or downloads data between a dataset and a cloud storage provider.</p>
+<h3 id="existing-setup">Existing Setup:</h3>
+<ul>
+<li>A Cloud Sync task is already configured to upload snapshots to Google Drive.</li>
+<li>Runs daily at 3:00 AM.</li>
+</ul>
+<h3 id="steps-to-configure_1">Steps to Configure:</h3>
+<ol>
+<li>Go to <strong>Data Protection</strong> → <strong>Cloud Sync Tasks</strong>.</li>
+<li>Click <strong>Add</strong>.</li>
+<li>Configure:</li>
+<li><strong>Direction</strong>: <code>Push</code>.</li>
+<li><strong>Transfer Mode</strong>: <code>Sync</code> or <code>Copy</code> (we recommend <code>Copy</code> for backups).</li>
+<li><strong>Path</strong>: Select dataset path (e.g., <code>/mnt/core-pool/lab/backups</code>).</li>
+<li><strong>Credential</strong>: Google Drive OAuth (already configured).</li>
+<li><strong>Remote Path</strong>: e.g., <code>truenas/lab-backups</code>.</li>
+<li><strong>Schedule</strong>: Daily at your preferred time.</li>
+</ol>
+<h3 id="recommended-schedule">Recommended Schedule:</h3>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Schedule</th>
+<th>Destination</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lab backups to GDrive</td>
+<td>Daily at 03:00 AM</td>
+<td>Google Drive</td>
+</tr>
+<tr>
+<td>Agency backups</td>
+<td>Weekly on Sunday</td>
+<td>Google Drive (or other)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-local-replication-tasks-optional">3. Local Replication Tasks (Optional)</h2>
+<p>If you have a second disk or another dataset for internal backup, TrueNAS allows local replication.</p>
+<h3 id="steps">Steps:</h3>
+<ol>
+<li>Go to <strong>Data Protection</strong> → <strong>Replication Tasks</strong>.</li>
+<li>Click <strong>Add</strong>.</li>
+<li>Select:</li>
+<li><strong>Source Dataset</strong>: e.g., <code>core-pool/lab</code>.</li>
+<li><strong>Destination Dataset</strong>: e.g., <code>core-pool/lab/backups</code>.</li>
+<li>Enable <strong>Recursive</strong>, <strong>Snapshot Replication</strong>, and configure schedule.</li>
+</ol>
+<hr />
+<h2 id="maintenance-recommendations">Maintenance Recommendations</h2>
+<ul>
+<li>Review Cloud Sync logs weekly to ensure successful uploads.</li>
+<li>Ensure snapshots are retained long enough for rollback if needed.</li>
+<li>Consider exporting critical snapshots manually before system upgrades.</li>
+</ul>
+<hr />
+<h2 id="related-files">Related Files</h2>
+<ul>
+<li>See <code>snapshots.md</code> for snapshot management and rollback.</li>
+<li>See <code>cloud_sync.md</code> for cloud provider setup.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -678,10 +1104,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": [], "search": "/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../../../..", "features": [], "search": "../../../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
