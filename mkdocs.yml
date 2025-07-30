@@ -1,7 +1,6 @@
-site_name: "Storage docs"
+site_name: "TrueNAS SCALE 24.04 docs"
 repo_url: "https://github.com/ifezgez/storage"
-docs_dir: docs
-
+docs_dir: docs                      # ya lo tienes, lo dejo explícito
 theme:
   name: material
 
@@ -11,21 +10,21 @@ markdown_extensions:
   - toc
 
 nav:
-  - Overview: index.md
+  - Home: index.md
 
   - TrueNAS SCALE 24.04 (bare-metal):
       - Installation: truenas/scale/24.04/bare-metal/docs/installation.md
-      - Network (VLAN): truenas/scale/24.04/bare-metal/docs/vlan_networking.md
+      - Networking:   truenas/scale/24.04/bare-metal/docs/vlan_networking.md
       - Dataset Layout: truenas/scale/24.04/bare-metal/docs/datasets.md
       - Pool Configuration: truenas/scale/24.04/bare-metal/docs/pool_config.md
-      - Snapshots: truenas/scale/24.04/bare-metal/docs/snapshots.md
+      - Snapshots:   truenas/scale/24.04/bare-metal/docs/snapshots.md
       - Snapshot Restoration: truenas/scale/24.04/bare-metal/docs/snapshot_restoration.md
-      - Cloud-Sync: truenas/scale/24.04/bare-metal/docs/cloud_sync.md
+      - Cloud Sync:  truenas/scale/24.04/bare-metal/docs/cloud_sync.md
       - Scheduled Backups: truenas/scale/24.04/bare-metal/docs/scheduled_backups.md
-      - SMB / NFS Shares: truenas/scale/24.04/bare-metal/docs/smb_shares.md
-      - NFS Exports: truenas/scale/24.04/bare-metal/docs/nfs_exports.md
+      - SMB / NFS Shares:  truenas/scale/24.04/bare-metal/docs/smb_shares.md
+      - NFS Exports:       truenas/scale/24.04/bare-metal/docs/nfs_exports.md
       - Permissions & ACL: truenas/scale/24.04/bare-metal/docs/permissions.md
       - Windows File Access: truenas/scale/24.04/bare-metal/docs/windows_file_access.md
 
   - Nextcloud 27 (containerized):
-      - Overview: nextcloud/27/containerized/README.md
+      - Home: nextcloud/27/containerized/README.md   # renombrado para consistencia
