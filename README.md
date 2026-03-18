@@ -1,36 +1,35 @@
-# Storage Repository
+# 💾 Storage Blueprints: Resilient Data Infrastructure
 
-This repository contains reference implementations of storage platforms and file‐sharing services for Vesta Lab.
+[![TrueNAS](https://img.shields.io/badge/Storage-TrueNAS_SCALE-00587C?logo=truenas)](https://www.truenas.com)
+[![ZFS](https://img.shields.io/badge/File_System-OpenZFS-black?logo=linux-foundation)](https://openzfs.org)
+[![Nextcloud](https://img.shields.io/badge/Cloud-Nextcloud-0082C9?logo=nextcloud)](https://nextcloud.com)
 
-| Service           | Version  | Deploy type   | Docs entry                                              |
-|-------------------|----------|---------------|---------------------------------------------------------|
-| **TrueNAS SCALE** | 23.10.1  | bare-metal    | [`truenas/scale/23.10.1/bare-metal/docs/`](truenas/scale/bare-metal/docs) |
-| **TrueNAS CORE**  | 13.0-U8  | bare-metal    | _placeholder_ |
-| **Nextcloud**     | 27       | Containerized | _placeholder_ |
+A collection of **Standardized Reference Implementations** for resilient storage platforms and secure file-sharing services. These blueprints prioritize data integrity, snapshots, and high-performance sharing.
 
 ---
 
-## Live Documentation
+## 🚀 Key Solutions
+- **Enterprise ZFS Storage:** Production-ready TrueNAS SCALE & CORE configurations.
+- **Private Cloud:** Secure, self-hosted file sharing and collaboration via Nextcloud.
+- **Data Protection:** Automated snapshots, replication, and backup strategies.
 
-The full storage lab is published online with MkDocs:  
-- [https://ifezgez.github.io/storage/](https://ifezgez.github.io/storage/)
+## 🛠️ Stack Overview
 
----
+| Solution           | Version  | Deployment Type | Core Focus                              |
+|-------------------|----------|-----------------|-----------------------------------------|
+| **TrueNAS SCALE** | 23.10.1  | Bare-metal      | High-Availability ZFS Storage           |
+| **TrueNAS CORE**  | 13.0-U8  | Bare-metal      | Stable Enterprise Storage               |
+| **Nextcloud**     | 27       | Containerized   | Private Cloud & Collaboration           |
 
----
-
-## Maintainer
-
-**Ignacio Fernandez**  
-CEO @ Vesta Security LATAM  
-[https://vestasec.com](https://vestasec.com)
-
----
-
----
-
-### License
-
-This repository is licensed under the [MIT License](LICENSE), unless a different license is specified in a particular service directory.
+## 🌐 Live Documentation
+Detailed storage deployment guides and configuration blueprints:  
+👉 [https://ifezgez.github.io/storage/](https://ifezgez.github.io/storage/)
 
 ---
+
+## 👤 Maintainer
+**Ignacio Fernandez** | CEO @ Vesta Security LATAM  
+[VestaSec.com](https://vestasec.com) | [LinkedIn](https://www.linkedin.com/in/ignacio-fernandez-vesta/)
+
+---
+**Data is the most valuable asset. Protect it with standardized, resilient infrastructure.**
