@@ -1,5 +1,5 @@
-site_name: "Storage Repository"
-repo_url:  "https://github.com/ifezgez/storage"
+site_name: "K8 Hybrid Lab"
+repo_url:  "https://github.com/iFezGez/k8_clauster"
 docs_dir:  docs
 
 theme:
@@ -12,18 +12,10 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-
-  - TrueNAS SCALE 24.04 (bare-metal):
-      - Installation: truenas/scale/24.04/bare-metal/docs/installation.md
-      - Networking:   truenas/scale/24.04/bare-metal/docs/vlan_networking.md
-      - Dataset Layout: truenas/scale/24.04/bare-metal/docs/datasets.md
-      - Pool Configuration: truenas/scale/24.04/bare-metal/docs/pool_config.md
-      - Snapshots:   truenas/scale/24.04/bare-metal/docs/snapshots.md
-      - Snapshot Restoration: truenas/scale/24.04/bare-metal/docs/snapshot_restoration.md
-      - Cloud Sync:  truenas/scale/24.04/bare-metal/docs/cloud_sync.md
-      - Scheduled Backups: truenas/scale/24.04/bare-metal/docs/scheduled_backups.md
-      - SMB / NFS Shares:  truenas/scale/24.04/bare-metal/docs/smb_shares.md
-      - NFS Exports:       truenas/scale/24.04/bare-metal/docs/nfs_exports.md
-      - Permissions & ACL: truenas/scale/24.04/bare-metal/docs/permissions.md
-      - Windows File Access: truenas/scale/24.04/bare-metal/docs/windows_file_access.md
+  - K8 Hybrid Lab:
+      - Overview: k8/hybrid/overview.md
+      - Phase 1 - Bootstrap Node 1: k8/hybrid/phase1-bootstrap-node1.md
+      - Phase 2 - Join Nodes: k8/hybrid/phase2-join-nodes.md
+      - Phase 3 - Tailscale + Oracle: k8/hybrid/phase3-tailscale-oracle.md
+      - Phase 4 - Metrics: k8/hybrid/phase4-observability.md
       

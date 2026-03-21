@@ -1,35 +1,24 @@
-# 💾 Storage Blueprints: Resilient Data Infrastructure
+# K8 Hybrid Lab (Tutorial)
 
-[![TrueNAS](https://img.shields.io/badge/Storage-TrueNAS_SCALE-00587C?logo=truenas)](https://www.truenas.com)
-[![ZFS](https://img.shields.io/badge/File_System-OpenZFS-black?logo=linux-foundation)](https://openzfs.org)
-[![Nextcloud](https://img.shields.io/badge/Cloud-Nextcloud-0082C9?logo=nextcloud)](https://nextcloud.com)
+This repository contains **placeholder‑safe** documentation for a hybrid Kubernetes lab.
+It is intended for customer demos and internal enablement.
 
-A collection of **Standardized Reference Implementations** for resilient storage platforms and secure file-sharing services. These blueprints prioritize data integrity, snapshots, and high-performance sharing.
+## Scope
+- On‑prem control plane (3 nodes)
+- Cloud edge worker for DMZ ingress
+- `kubeadm` bootstrap
+- `containerd` runtime
+- CNI + Ingress
+- Tailscale subnet routing
+- Metrics for Lens
 
----
+## Safety
+- Do **not** include real IPs, credentials, or customer data.
+- Replace placeholders (e.g. `<CONTROL_PLANE_IP>`) with your values at deployment time.
 
-## 🚀 Key Solutions
-- **Enterprise ZFS Storage:** Production-ready TrueNAS SCALE & CORE configurations.
-- **Private Cloud:** Secure, self-hosted file sharing and collaboration via Nextcloud.
-- **Data Protection:** Automated snapshots, replication, and backup strategies.
-
-## 🛠️ Stack Overview
-
-| Solution           | Version  | Deployment Type | Core Focus                              |
-|-------------------|----------|-----------------|-----------------------------------------|
-| **TrueNAS SCALE** | 23.10.1  | Bare-metal      | High-Availability ZFS Storage           |
-| **TrueNAS CORE**  | 13.0-U8  | Bare-metal      | Stable Enterprise Storage               |
-| **Nextcloud**     | 27       | Containerized   | Private Cloud & Collaboration           |
-
-## 🌐 Live Documentation
-Detailed storage deployment guides and configuration blueprints:  
-👉 [https://ifezgez.github.io/storage/](https://ifezgez.github.io/storage/)
-
----
-
-## 👤 Maintainer
-**Ignacio Fernandez** | CEO @ Vesta Security LATAM  
-[VestaSec.com](https://vestasec.com) | [LinkedIn](https://www.linkedin.com/in/ignacio-fernandez-vesta/)
-
----
-**Data is the most valuable asset. Protect it with standardized, resilient infrastructure.**
+## Docs
+- `docs/k8/hybrid/overview.md`
+- `docs/k8/hybrid/phase1-bootstrap-node1.md`
+- `docs/k8/hybrid/phase2-join-nodes.md`
+- `docs/k8/hybrid/phase3-tailscale-oracle.md`
+- `docs/k8/hybrid/phase4-observability.md`

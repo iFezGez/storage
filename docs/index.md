@@ -1,9 +1,13 @@
-# Storage Repository
+# K8 Hybrid Lab
 
-Welcome to the **Vesta Lab Storage** stack.
+Welcome to the **K8 Hybrid Lab** documentation.
 
-This site covers step-by-step deployment and operations for storage platforms used in Vesta Lab projects.
+This site covers step‑by‑step deployment and operations for a hybrid Kubernetes lab.
 
 ## Contents
 
-- **TrueNAS Scale 24.04** – full bare-metal walkthrough
+- **K8 Hybrid Lab** – Kubernetes hybrid lab tutorial (placeholder-safe)
+  - Phase 1: Bootstrap Node 1
+  - Phase 2: Join Additional Nodes
+  - Phase 3: Tailscale + Oracle Edge
+  - Phase 4: Metrics for Lens
